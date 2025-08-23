@@ -1,0 +1,66 @@
+
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background-image: url('/momsbackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+#about-page {
+  max-width: 1350px;
+  margin: 7rem auto;
+  padding: 10rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.534); 
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  color: #1f2937;  
+}
+
+#about-me {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+#about-me h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: #ff8bc7;
+}
+
+#michele-frisancho {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+#about-me-picture {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #9caf88;          
+  box-shadow: 0 8px 18px rgba(0,0,0,0.10);
+}
+
+#about-me-section {
+  text-align: center;
+}
+#about-me-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #ff8bc7;                       
+  border-bottom: 2px solid #9caf88;      
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+#about-me-section p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: #1f2937;                          
+  max-width: 60ch;
+  margin: 0.5rem auto 0;
+}
