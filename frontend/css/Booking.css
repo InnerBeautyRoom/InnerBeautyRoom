@@ -1,0 +1,85 @@
+.fc {
+  font-family: 'Arial', sans-serif;
+  margin-left: 2rem;
+  margin-right: 2rem;
+    height: 1000px !important;
+}
+
+.fc-timegrid-slot {
+  border: 1px solid black !important;
+  height: 50px !important;
+}
+
+.fc-timegrid-body {
+  background-color: #f9f9f9;
+  border: 1px solid black;
+
+}
+
+.fc-timegrid-col {
+  border: 1px solid black !important;
+}
+
+.fc-day-today {
+  background-color: #fff5f0;
+}
+
+.fc-timegrid-axis {
+  background-color: #F4DAD3;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.fc-timegrid-slot-label {
+  font-weight: bold;
+  color: #333;
+  width: 50px; 
+}
+
+.fc-timegrid-now-indicator {
+  background-color: red;
+  height: 2px;
+}
+
+.fc-event {
+  border-radius: 8px;
+  padding: 4px 6px;
+  font-weight: bold;
+}
+
+.fc-col-header-cell {
+  background-color: #F4DAD3;
+  color: black;
+  font-weight: bold;
+  border-right: 1px solid black !important;
+}
+
+.fc-highlight {
+  background-color: rgba(254, 153, 0, 0.3);
+}
+
+#booking-popup-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#booking-popup {
+    background: white;
+    padding: 2rem;
+    border-radius: .5rem;
+    min-width: 300px;
+}
+
+#booking-form {
+display: flex;
+ flex-direction: column;
+  gap: 0.5rem;
+}
