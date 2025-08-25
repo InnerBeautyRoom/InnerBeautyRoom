@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.85rem 2rem;
+  height: 4.25rem;
   background: #fbeff5; 
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -35,29 +35,93 @@
   font-weight: 600;
   margin: 0;
   color: #374151; 
+  margin-left: 1rem;
 }
 
-#navbar-links {
+#navbar-burger {
+  display: none;
+}
+
+#navbar-burger button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 1rem;
+}
+
+#navbar-burger p {
+  width: 1rem;
+  background-color: black;
+  height: 3px;
+}
+
+#navbar-burger button:hover {
+  transform: translateY(-.15rem);
+  box-shadow: 0 0 10px black;
+  cursor: pointer;
+}
+
+#navbar-links-open, #navbar-links-off {
   display: flex;
   gap: 1.5rem;
+  margin-right: 1rem;
 }
 
-#navbar-links a {
+#navbar-links-open a, #navbar-links-off a {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
   color: #374151;
-  padding: 0.25rem 0;
-  transition: color 0.2s ease, border-bottom 0.2s ease;
+  padding: 0.15rem 0;
+border-bottom: 1px solid transparent; 
 }
 
-#navbar-links a:hover {
+#navbar-links-open a:hover, #navbar-links-off a:hover  {
   color: #9caf88; 
   transform: translateY(-.15rem);
   border-bottom: 1px solid black;
 }
 
-#navbar-links a.active {
-  color: #b91c1c; 
-  border-bottom: 2px solid #b91c1c;
+@media screen and (max-width: 915px) {
+#navbar-burger {
+  display: flex;
+  margin-right: 1rem;
+}
+
+#navbar-links-open {
+  position: absolute;
+  top: 4.1rem;
+  border: 1px solid white;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: lightblue;
+  width: 100vw;
+  justify-content: space-around;
+}
+
+#navbar-links-open a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #374151;
+  padding: 0.15rem 0;
+border-bottom: 1px solid transparent; 
+}
+
+#navbar-links-open a:hover {
+  color: #9caf88; 
+  transform: translateY(-.15rem);
+  border-bottom: 1px solid black;
+}
+
+#navbar-links-off {
+  display: none;
+}
 }
