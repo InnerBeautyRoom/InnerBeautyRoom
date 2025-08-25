@@ -8,10 +8,6 @@ const PORT = process.env.PORT || 3010
 const app = express();
 app.use(express.json());
 
-
- 
 app.listen(PORT, () => {
     console.log(PORT)
-})
-
-
+});
