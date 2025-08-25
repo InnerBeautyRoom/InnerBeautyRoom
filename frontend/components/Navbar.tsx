@@ -21,6 +21,7 @@ const Navbar = () => {
                 <Link to = '/questions' onClick = {() => setBurger(false)}>Questions</Link>
                 <Link to = '/contact' onClick = {() => setBurger(false)}>Contact</Link>
                 <Link to = '/about' onClick = {() => setBurger(false)}>About</Link>
+                <Link to = '/admin' onClick = {() => setBurger(false)}>Admin</Link>
             </div>
         </nav>
     )
