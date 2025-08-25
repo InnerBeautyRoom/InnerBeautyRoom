@@ -10,6 +10,7 @@ import '/css/Booking.css'
 import '/css/Questions.css'
 import '/css/Contact.css'
 import '/css/About.css'
+import '/css/Services.css'
 import App from './App'
 
 createRoot(document.getElementById('root')!).render(

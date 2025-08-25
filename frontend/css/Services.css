@@ -1,2 +1,82 @@
+/* Container */
+#showcase {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: #1f2937; /* dark slate */
+}
 
+/* Each row: picture + text next to each other */
+.showcase-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
 
+/* Alternate image side (keep your existing classes) */
+.order-left  { order: 0; }
+.order-right { order: 1; }
+
+/* Image panel — clean, no overlay */
+.showcase-media {
+  flex: 1 1 50%;
+  min-width: 0;
+  border-radius: 14px;
+  overflow: hidden;
+
+  /* ensure no overlay styles */
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.showcase-media img {
+  width: 100%;
+  height: auto;        /* natural height */
+  display: block;
+  object-fit: cover;   /* crops gracefully if needed */
+  transition: transform .35s ease;
+}
+.showcase-media:hover img { transform: scale(1.03); }
+
+/* Text panel — clean, no overlay */
+.showcase-text {
+  flex: 1 1 50%;
+  min-width: 0;
+
+  /* ensure no overlay styles */
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+.showcase-text h2 {
+  margin: 0 0 .5rem;
+  font-size: 1.5rem;
+  color: #111827;
+  display: inline-block;
+  padding-bottom: .2rem;
+  border-bottom: 2px solid #f3d1e6; /* light pink accent */
+}
+.showcase-text p {
+  margin: .6rem 0 0;
+  line-height: 1.65;
+  color: #475569;
+}
+
+/* Mobile: stack image above text */
+@media (max-width: 800px) {
+  .showcase-row {
+    flex-direction: column;
+    text-align: left; /* or center if you prefer */
+  }
+  .order-left, .order-right { order: unset; }
+}
+
+/* Optional: tighten spacing on very small screens */
+@media (max-width: 520px) {
+  #showcase { padding: 0 .75rem; }
+  .showcase-row { gap: 1.25rem; margin: 1.5rem 0; }
+  .showcase-text h2 { font-size: 1.35rem; }
+}
