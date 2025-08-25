@@ -17,9 +17,9 @@ const services = [{
     img: "/kttraet.jpeg",
   },]; 
 const prices = [ 
-  { name: "Women’s Haircut", price: "$75+" },
-  { name: "Men’s Haircut", price: "$45+" },
-  { name: "Root Touch‑Up", price: "$85+" },
+  { name: "Women’s Haircut", price: "$55+" },
+  { name: "Glaze", price: "$90+" },
+  { name: "Root Touch‑Up", price: "$100+" },
   { name: "Full Highlights", price: "$180+" },];   
 
 const Home = () => {
