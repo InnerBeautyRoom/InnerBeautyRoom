@@ -11,6 +11,7 @@ import '/css/Questions.css'
 import '/css/Contact.css'
 import '/css/About.css'
 import '/css/Services.css'
+import '/css/Admin.css'
 import App from './App'
 
 createRoot(document.getElementById('root')!).render(
