@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   background-image: url('/momsbackground.png');
@@ -6,20 +5,21 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: #1f2937;
 }
-
 
 #about-page {
   max-width: 1350px;
   margin: 7rem auto;
-  padding: 10rem;
+  padding: 6rem;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.534); 
+  background: rgba(255, 255, 255, 0.534);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
-  color: #1f2937;  
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
 #about-me {
@@ -29,6 +29,7 @@ body {
 #about-me h1 {
   margin: 0;
   font-size: 4rem;
+  font-weight: 700;
   color: #ff8bc7;
 }
 
@@ -42,25 +43,67 @@ body {
   height: 400px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #9caf88;          
-  box-shadow: 0 8px 18px rgba(0,0,0,0.10);
+  border: 3px solid #9caf88;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);
 }
 
 #about-me-section {
   text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;  
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
 }
 #about-me-section h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 0.75rem;
-  color: #ff8bc7;                       
-  border-bottom: 2px solid #9caf88;      
+  color: #ff8bc7;
+  border-bottom: 2px solid #9caf88;
   display: inline-block;
   padding-bottom: 0.25rem;
 }
 #about-me-section p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.7;
-  color: #1f2937;                          
-  max-width: 60ch;
+  color: #1f2937;
+  max-width: 70ch;
   margin: 0.5rem auto 0;
+}
+
+#skills-section {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+#skills-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #ff8bc7;
+  border-bottom: 2px solid #9caf88;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+#skills-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 500px;
+}
+#skills-section li {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1.8rem;
+  position: relative;
+}
+
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+footer p {
+  margin: 0;
 }
