@@ -12,6 +12,7 @@ import '/css/Contact.css'
 import '/css/About.css'
 import '/css/Services.css'
 import '/css/Admin.css'
+import '/css/Googlemaps.css'
 import App from './App'
 
 createRoot(document.getElementById('root')!).render(

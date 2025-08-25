@@ -73,16 +73,40 @@ body {
 
 #booking-button a {
   text-decoration: none;
-  color: #ff478a;
-  padding: 15px;
-  transition: color 0.2s ease, border-bottom 0.2s ease;
-  background-color: #efd6df;
-  border-radius: 15px;
+  color: #e5e7eb;
 }
 
 #booking-button{
   display: flex;
   flex-direction: row;
   justify-content: center;
- 
+  max-width: 15rem;
+  padding: 1rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .02s ease;
+  background: #ff8bc7;     
+  border-color: #ff8bc7;
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(255, 107, 185, 0.25);
+}
+
+#booking-button:hover {
+  background: #ff6db9;      
+  border-color: #ff6db9;
+  box-shadow: 0 8px 18px rgba(255, 107, 185, 0.35);
+}
+
+
+#booking-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(255, 107, 185, 0.25);
+}
+
+
+#booking-button:focus-visible{
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 139, 199, 0.35);
 }

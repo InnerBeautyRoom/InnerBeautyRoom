@@ -1,0 +1,15 @@
+.map-container {
+  width: 100%;
+  height: 340px;       /* must be non-zero */
+  border-radius: 14px;
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+
+.section-title {
+  display: inline-block; 
+  font-size: 1.5rem; 
+  margin: 0 0 1.25rem; 
+  padding-bottom: .25rem; 
+  border-bottom: 2px solid #f9d4e7; 
+}
