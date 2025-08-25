@@ -3,6 +3,8 @@
   margin-left: 2rem;
   margin-right: 2rem;
     height: 1000px !important;
+   border-radius: 1rem !important;
+   overflow: hidden !important;
 }
 
 .fc-timegrid-slot {
@@ -12,9 +14,13 @@
 
 .fc-timegrid-body {
   background-color: #f9f9f9;
-  border: 1px solid black;
-
+  border: 1px solid black !important;
 }
+
+.fc-col-header, .fc-col-header-cell {
+border: 1px solid black !important;
+}
+
 
 .fc-timegrid-col {
   border: 1px solid black !important;
@@ -22,12 +28,12 @@
 
 .fc-day-today {
   background-color: #fff5f0;
+    border: 1px solid black !important;
 }
 
 .fc-timegrid-axis {
   background-color: #F4DAD3;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border: 1px solid black !important;
 }
 
 .fc-timegrid-slot-label {
@@ -51,7 +57,7 @@
   background-color: #F4DAD3;
   color: black;
   font-weight: bold;
-  border-right: 1px solid black !important;
+    border-right: 1px solid black !important;
 }
 
 .fc-highlight {

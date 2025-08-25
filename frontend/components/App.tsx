@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Routes, Route} from 'react-router-dom'
 import Navbar from './Navbar'
 import Home from './Home'
@@ -9,6 +8,8 @@ import Booking from './Booking'
 import Questions from './Questions'
 import Contact from './Contact'
 import About from './About'
+import Admin from './Admin'
+
 function App() {
 
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path = '/questions' element = {<Questions />} />
       <Route path = '/contact' element = {<Contact />} />
       <Route path = '/about' element = {<About />} />
+      <Route path = '/admin' element = {<Admin />} />
     </Routes>
   </div>
   )
