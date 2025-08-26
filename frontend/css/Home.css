@@ -1,4 +1,3 @@
-/* Hero */
 #hero { 
   background: linear-gradient(180deg, #fff0f7 0%, rgba(255,240,247,.6) 100%); 
   padding: 5rem 1rem 3rem; 
@@ -59,8 +58,7 @@
   box-shadow: 0 4px 10px rgba(255, 107, 185, 0.25);
 }
 
-#btn-primary:focus-visible 
-btn-link:focus-visible{
+#btn-primary:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(255, 139, 199, 0.35);
 }
