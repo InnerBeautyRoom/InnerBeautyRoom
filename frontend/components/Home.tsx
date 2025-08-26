@@ -15,7 +15,14 @@ const services = [{
     title: "Keratin Smoothing",
     desc: "Silky, frizz‑free hair with long‑lasting smoothness (up to five months).",
     img: "/kttraet.jpeg",
-  },]; 
+    
+  },
+  {
+    title: "Haircut",
+    desc: "A custom haircut designed to flatter your features and lifestyle.",
+    img: "/IMG_1164.JPEG",
+    
+}]; 
 const prices = [ 
   { name: "Women’s Haircut", price: "$55+" },
   { name: "Glaze", price: "$90+" },

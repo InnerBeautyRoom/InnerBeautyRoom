@@ -59,8 +59,7 @@
   box-shadow: 0 4px 10px rgba(255, 107, 185, 0.25);
 }
 
-#btn-primary:focus-visible 
-btn-link:focus-visible{
+#btn-primary:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(255, 139, 199, 0.35);
 }
@@ -110,14 +109,16 @@ btn-link:focus-visible{
 
 #price-grid { 
   display: grid; 
+  margin: 2rem auto; 
+  max-width: 60rem ;
   gap: .5rem; 
 }
 #price-row { 
   display: flex; 
   align-items: center; 
   justify-content: space-between; 
-  padding: .75rem 1rem; 
-  border: 1px solid #e5e7eb; 
+  padding: 1rem 1.25rem; 
+  border: 2px solid #e5e7eb; 
   border-radius: 10px; 
   background: #fff; 
 }
@@ -125,7 +126,12 @@ btn-link:focus-visible{
   font-weight: 600; 
 }
 #muted { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #6b7280; 
+  padding: 0,5rem 1.25rem; 
+  border-radius: 100px;
   margin-top: .75rem; 
 }
 
