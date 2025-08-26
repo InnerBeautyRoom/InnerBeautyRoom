@@ -53,6 +53,7 @@ const services = [
 const Services = () => {
   return (
   <section id="showcase">
+    <h1>Services</h1>
   {services.map((s, i) => (
     <div className="showcase-row" key={s.title}>
       <div className={`showcase-media ${i % 2 ? "order-right" : "order-left"}`}>
