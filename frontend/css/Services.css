@@ -68,6 +68,7 @@ h1::after {
   text-align: center;
   margin-top: 0.5rem;
   padding: 2rem;  
+  background: #ff98d87a;
   border-radius: 12px;
   box-shadow: 0 6px 14px rgba(0,0,0,0.06);
 }
