@@ -1,91 +1,99 @@
-.fc {
-  font-family: 'Arial', sans-serif;
-  margin-left: 2rem;
-  margin-right: 2rem;
-    height: 1000px !important;
-   border-radius: 1rem !important;
-   overflow: hidden !important;
+/* Calendar wrapper (optional tidy) */
+#booking {
+  max-width: 1100px;
+  margin: 1rem auto;
+  padding: .75rem;
+  border: 1px solid #111;
+  border-radius: 1rem;
+  background: #fff;
+  position: relative; /* ensure no weird stacking context */
+  z-index: 0;
 }
 
+/* Keep your simple look */
+.fc-col-header, .fc-col-header-cell {
+  background: #F4DAD3;
+  color: #111;
+  font-weight: 700;
+  border: 1px solid #111 !important;
+}
+.fc-timegrid-body {
+  background: #fffaf8;
+  border-left: 1px solid #111 !important;
+  border-right: 1px solid #111 !important;
+  border-bottom: 1px solid #111 !important;
+}
 .fc-timegrid-slot {
-  border: 1px solid black !important;
+  border-bottom: 1px dashed rgba(17,17,17,.5) !important;
   height: 50px !important;
 }
-
-.fc-timegrid-body {
-  background-color: #f9f9f9;
-  border: 1px solid black !important;
-}
-
-.fc-col-header, .fc-col-header-cell {
-border: 1px solid black !important;
-}
-
-
-.fc-timegrid-col {
-  border: 1px solid black !important;
-}
-
-.fc-day-today {
-  background-color: #fff5f0;
-    border: 1px solid black !important;
-}
-
 .fc-timegrid-axis {
-  background-color: #F4DAD3;
-  border: 1px solid black !important;
+  background: #F4DAD3;
+  border-right: 1px solid #111 !important;
+  color: #111;
+  font-weight: 700;
 }
-
-.fc-timegrid-slot-label {
-  font-weight: bold;
-  color: #333;
-  width: 50px; 
-}
-
-.fc-timegrid-now-indicator {
-  background-color: red;
-  height: 2px;
-}
-
-.fc-event {
-  border-radius: 8px;
+.fc .fc-event {
+  background: #ffe6d1;
+  border: 1px solid #111 !important;
+  color: #111;
+  border-radius: .6rem;
   padding: 4px 6px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.fc-col-header-cell {
-  background-color: #F4DAD3;
-  color: black;
-  font-weight: bold;
-    border-right: 1px solid black !important;
-}
-
-.fc-highlight {
-  background-color: rgba(254, 153, 0, 0.3);
-}
 
 #booking-popup-box {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  inset: 0;
+  display: flex;             
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(4px);
+  z-index: 9999;              
 }
 
 #booking-popup {
-    background: white;
-    padding: 2rem;
-    border-radius: .5rem;
-    min-width: 300px;
+  background: #fff;
+  border: 1px solid #111;
+  border-radius: .9rem;
+  width: min(520px, 92vw);
+  padding: 1rem;
+}
+
+#booking-popup h2 {
+  margin: 0 0 .5rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #1f2937;
+  border-bottom: 1px solid #111;
+  padding-bottom: .5rem;
 }
 
 #booking-form {
-display: flex;
- flex-direction: column;
-  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .75rem;
+  margin-top: .75rem;
 }
+#booking-form input,
+#booking-form select {
+  width: 100%;
+  padding: .6rem .65rem;
+  border: 1px solid #111;
+  border-radius: .5rem;
+  background: #fff;
+  color: #1f2937;
+}
+#booking-form button[type="submit"] {
+  grid-column: 1 / -1;
+  justify-self: end;
+  padding: .6rem .9rem;
+  border-radius: 999px;
+  border: 1px solid #111;
+  background: linear-gradient(180deg, #ffe7da, #ffd1bd);
+  font-weight: 800;
+  cursor: pointer;
+}
+
