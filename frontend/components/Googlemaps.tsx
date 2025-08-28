@@ -10,7 +10,6 @@ const Maps = () => {
  if (loadError) {
     return (
       <section id="map">
-        <h2 id="section-title">Find Us</h2>
         <p id="muted">Map failed to load.</p>
       </section>
     );
@@ -19,7 +18,6 @@ const Maps = () => {
   return (
     <main>
       <section id="map" className="section">
-        <h2 className="section-title">Find Us</h2>
         {isLoaded ? (
           <GoogleMap
             center={center}
