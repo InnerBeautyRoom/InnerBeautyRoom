@@ -1,11 +1,3 @@
-body {
-  margin: 0;
-  background-image: url('/momsbackground.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 
 #pricing-page {
   max-width: 900px;
