@@ -2,10 +2,9 @@ import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 
 const center = { lat: 27.09125, lng: -82.44252778 };
 const Maps = () => {
- 
-  const apiKey = "AIzaSyAq_-d7P3VeXsWBrtFK9OzVPCcTkj4RKUo";
+
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: apiKey || "",
+    googleMapsApiKey: import.meta.env.VITE_API_KEY || "",
   });
 
  if (loadError) {
