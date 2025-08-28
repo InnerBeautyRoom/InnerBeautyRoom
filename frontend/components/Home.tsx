@@ -147,6 +147,9 @@ const Home = () => {
                 My one-on-one studio is a calm space where you’re heard, comfortable, and leave feeling effortlessly beautiful.</p>
             </div>
           </div>
+           <div id="hero-actions">
+            <Link to="/about" id="btn-primary-hero">More about me</Link>
+          </div>
         </div>
       </section>
 
